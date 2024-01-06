@@ -40,3 +40,8 @@ const makeReact = function () {
 
   return useState; //uuseState() 함수는 결국 배열을 반환하는 함수
 }
+
+// MakeComponent 함수는 간략화된 React 컴포넌트입니다.
+function MakeComponent() {
+  
+}
