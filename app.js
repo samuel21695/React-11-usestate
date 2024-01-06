@@ -50,5 +50,10 @@ function MakeComponent() {
 
   // 결과적으로 아래와 같은 간단한 click 이벤트 핸들일 뿐이지만,
   // 내부적으로는 '지정된 상태'를 업데이트 하는 로직을 품고 있습니다.
-  
+  return (
+    <>
+      <div>{state.toString()}</div>
+      <button onClick={() => setState(!state)}>토글</button>
+    </>
+  )
 }
