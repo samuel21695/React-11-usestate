@@ -5,11 +5,14 @@ const makeReact = function () {
   let index = 0;
 
   function useState(initialState) {
-    // 상태 배열이 아직 초기화되지 않았다면 초기화합ㄴ디ㅏ.
+    // 상태 배열이 아직 초기화되지 않았다면 초기화합니다.
     // 이 배열은 모든 상태 값을 저장합니다.
     if(global.states === undefined) {
       global.state = [];
     }
-    
+
+    // 현재 상태를 가져오거나 초기 상태를 설정합니다.
+    // 여기서는 상태가 배열에 저장되며, 순서에 따라 관리됩니다.
+    // global.states[index] 값이 없으면 initialState를 사용하는 취지의 or 연산자를 사용
   }
 }
