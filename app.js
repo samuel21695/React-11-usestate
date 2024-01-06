@@ -4,4 +4,12 @@ const makeReact = function () {
   const global = {};
   let index = 0;
 
+  function useState(initialState) {
+    // 상태 배열이 아직 초기화되지 않았다면 초기화합ㄴ디ㅏ.
+    // 이 배열은 모든 상태 값을 저장합니다.
+    if(global.states === undefined) {
+      global.state = [];
+    }
+    
+  }
 }
