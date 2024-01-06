@@ -16,5 +16,8 @@ const makeReact = function () {
     // global.states[index] 값이 없으면 initialState를 사용하는 취지의 or 연산자를 사용
     const currentState = global.state[index] || initialState;
     global.states[index] = currentState;
+
+    // setState 함수는 클로저를 사용하여 현재 상태의 인덱스를 기억합니다.
+    // 상태를 업데이트하려면 이 함수를 호출합니다.
   }
 }
