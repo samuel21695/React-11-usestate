@@ -32,5 +32,11 @@ const makeReact = function () {
 
     // 다음 상태를 위해 인덱스를 증가시킵니다.
     index = index + 1;
+
+    // 현재 상태와 그 상태를 업데이트 함수를 반환합니다.
+    // 이는 React와 useState 훅과 유사한 패턴입니다.
+    return [currentState, setState]; // [상태, 상태를 업데이트하는 함수]
   }
+
+  return useState; //uuseState() 함수는 결국 배열을 반환하는 함수
 }
