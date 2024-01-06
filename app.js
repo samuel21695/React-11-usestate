@@ -22,8 +22,12 @@ const makeReact = function () {
     const setState = (function () {
       let currentIndex = index; // currentIndex도 클로저이다.
       return function (value) {
-        global.states[currnetIndex] = value;
+        global.states[currentIndex] = value;
       }
     })();
+    // (function() { 로직 })(); <-- 즉시실행함수 IIFE (Immediately Invoked Function Expression)
+    // 선언과 동시에 실행되는 함수로 한번만 실행되고 사라짐
+    // 매번 메모리에 남아있는 함수 선언과 다릅니다.
+    // 특수한 경우에만 사용하는 것이 좋다. (찾아야 하는 경우가 있음)
   }
 }
