@@ -57,3 +57,5 @@ function MakeComponent() {
     </>
   )
 }
+
+console.log(MakeComponent());
