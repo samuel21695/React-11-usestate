@@ -19,5 +19,11 @@ const makeReact = function () {
 
     // setState 함수는 클로저를 사용하여 현재 상태의 인덱스를 기억합니다.
     // 상태를 업데이트하려면 이 함수를 호출합니다.
+    const setState = (function () {
+      let currentIndex = index; // currentIndex도 클로저이다.
+      return function (value) {
+        global.states[currnetIndex] = value;
+      }
+    })();
   }
 }
