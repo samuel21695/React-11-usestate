@@ -47,4 +47,8 @@ function MakeComponent() {
   // 초기 상태는 'true'입니다.
   const useState = makeReact(); // useState() 구현을 위한 안티패턴
   const [state, setState] = useState(true);
+
+  // 결과적으로 아래와 같은 간단한 click 이벤트 핸들일 뿐이지만,
+  // 내부적으로는 '지정된 상태'를 업데이트 하는 로직을 품고 있습니다.
+  
 }
