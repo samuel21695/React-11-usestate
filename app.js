@@ -43,5 +43,8 @@ const makeReact = function () {
 
 // MakeComponent 함수는 간략화된 React 컴포넌트입니다.
 function MakeComponent() {
-  
+  // useState 훅을 사용하여 상태와 상태 설정 함수를 가져옵니다.
+  // 초기 상태는 'true'입니다.
+  const useState = makeReact(); // useState() 구현을 위한 안티패턴
+  const [state, setState] = useState(true);
 }
